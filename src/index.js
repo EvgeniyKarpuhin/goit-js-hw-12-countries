@@ -2,7 +2,7 @@ import './sass/main.scss';
 import countrySearch from './js/service/country-serv';
 import refs from './js/refs';
 import oneCountry from './templ/oneCountry.hbs';
-import countryList from './templ/manyCountry.hbs';
+import countryList from './templ/manyCountry';
 
 import '@pnotify/core/dist/BrightTheme.css';
 const { error } = require('@pnotify/core');
