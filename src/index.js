@@ -28,7 +28,8 @@ function countryInput(e) {
     })
 
     .catch {
-        Error("You must enter query parameters!");}
+        Error("You must enter query parameters!");
+    }
     }
 
 
