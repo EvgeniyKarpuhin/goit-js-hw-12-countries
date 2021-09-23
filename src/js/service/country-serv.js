@@ -1,4 +1,4 @@
-const base = 'https://restcountries.eu/rest/v2/name/';
+const base = 'https://restcountries.com/v3/all/';
 
 export default {
     fetchArticles(query) {
