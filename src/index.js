@@ -29,7 +29,6 @@ function countryInput(e) {
 
     .catch(Error => {
         text: "You must enter query parameters!";
-        console.log(Error);
     })
 }
 
