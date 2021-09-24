@@ -12,6 +12,7 @@ refs.search.addEventListener('input', debounce(countryInput, 500));
 
 function countryInput(e) {
     e.preventDefault();
+    clearArticles();
     const searchQuery = e.target.value;
 
     countrySearch.fetchArticles(searchQuery).then(f => {
