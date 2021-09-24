@@ -12,7 +12,6 @@ refs.search.addEventListener('input', debounce(countryInput, 500));
 
 function countryInput(e) {
     e.preventDefault();
-    clearArticles();
     const searchQuery = e.target.value;
 
     countrySearch.fetchArticles(searchQuery).then(f => {
@@ -34,7 +33,8 @@ function countryInput(e) {
 
 function buildList(count, template) {
     const mark = count.map(c => template(c)).join();
-    refs.search.insertAdjacentHTML('afterbegin', mark)
+    refs.search.insertAdjacentHTML('afterbegin', mark);
+    clearArticles();
 }
 
 function clearArticles() {
