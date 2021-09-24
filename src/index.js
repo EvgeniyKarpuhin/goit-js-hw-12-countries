@@ -29,12 +29,12 @@ function countryInput(e) {
     .catch(err => {
         err.Error({text: "You must enter query parameters!"});
     })
+    clearArticles();
 }
 
 function buildList(count, template) {
     const mark = count.map(c => template(c)).join();
-    refs.search.insertAdjacentHTML('afterbegin', mark);
-    clearArticles();
+    refs.search.insertAdjacentHTML('afterbegin', mark)
 }
 
 function clearArticles() {
