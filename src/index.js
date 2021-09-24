@@ -26,8 +26,9 @@ function countryInput(e) {
         }
     })
 
-    .catch(err => {
-        err.Error({text: "You must enter query parameters!"});
+    .catch((error) => {
+        // err.Error({text: "You must enter query parameters!"});
+        error;
     })
     clearArticles();
 }
