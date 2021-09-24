@@ -1,4 +1,4 @@
-const base = 'https://restcountries.com/v3/name/';
+const base = 'https://restcountries.com/v2/name/';
 
 export default {
     fetchArticles(query) {
