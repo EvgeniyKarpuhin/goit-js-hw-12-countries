@@ -8,5 +8,8 @@
             {{/each}}
         </ul>
     </ul>
-    <ul><img src="{{flag}}" alt="" class="flag"></ul>
+    <ul><img {{#each flags}}
+    src="{{this}}" 
+    {{/each}}
+    alt="{{name}} flag" class="flag" width="300"></ul>
 </div>
