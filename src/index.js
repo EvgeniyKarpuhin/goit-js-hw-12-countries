@@ -27,9 +27,10 @@ function countryInput(e) {
         }
     })
 
-    .catch(Error({text: "You must enter query parameters!"}));
-    }
-
+    .catch(err => {
+        err.Error({text: "You must enter query parameters!"});
+    })
+}
 
 function buildList(count, template) {
     const mark = count.map(c => template(c)).join();
