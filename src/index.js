@@ -30,7 +30,7 @@ function countryInput(e) {
         // err.Error({text: "You must enter query parameters!"});
         console.error(error));
     }
-    clearArticles();
+    
 
 
 function buildList(count, template) {
