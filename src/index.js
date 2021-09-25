@@ -24,11 +24,13 @@ function countryInput(e) {
             buildList(f, oneCountry);
         } else if (f.length <= 10) {
             buildList(f, countryList);
+        } else {
+            error({text: "You must enter query parameters!"});
         }
     })
 
-    .catch(err => console.error(err))
-        //error({text: "You must enter query parameters!"});
+    // .catch(err => console.error(err))
+    //     //error({text: "You must enter query parameters!"});
         
 }
 
