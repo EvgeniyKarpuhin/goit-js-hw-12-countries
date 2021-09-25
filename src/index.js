@@ -32,11 +32,10 @@ function countryInput(e) {
 
 
 function buildList(count, template) {
-    clearArticles()
     const mark = count.map(c => template(c)).join();
     refs.search.insertAdjacentHTML('afterbegin', mark)
 }
 
-function clearArticles() {
-    refs.search.innerHTML = '';
-}
+// function clearArticles() {
+//     refs.search.innerHTML = '';
+// }
