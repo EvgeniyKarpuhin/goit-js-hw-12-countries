@@ -12,7 +12,7 @@ refs.search.addEventListener('input', debounce(countryInput, 500));
 
 function countryInput(e) {
     e.preventDefault();
-    
+    // clearArticles();
     const searchQuery = e.target.value;
 
     countrySearch.fetchArticles(searchQuery).then(f => {
@@ -27,10 +27,9 @@ function countryInput(e) {
         }
     })
 
-    .catch(err => {
-        err.Error({text: "You must enter query parameters!"});
-    })
-}
+    .catch(Error({text: "You must enter query parameters!"}));
+    }
+
 
 function buildList(count, template) {
     const mark = count.map(c => template(c)).join();
