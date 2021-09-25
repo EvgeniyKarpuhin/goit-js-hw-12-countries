@@ -26,12 +26,12 @@ function countryInput(e) {
         }
     })
 
-    .catch((error) => {
+    .catch(error => 
         // err.Error({text: "You must enter query parameters!"});
-        error;
-    })
+        console.error(error));
+    }
     clearArticles();
-}
+
 
 function buildList(count, template) {
     const mark = count.map(c => template(c)).join();
