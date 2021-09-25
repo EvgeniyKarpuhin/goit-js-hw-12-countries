@@ -27,11 +27,7 @@ function countryInput(e) {
         } else {
             error({text: "You must enter query parameters!"});
         }
-    })
-
-    // .catch(err => console.error(err))
-    //     //error({text: "You must enter query parameters!"});
-        
+    })       
 }
 
 
