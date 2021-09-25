@@ -5,6 +5,6 @@ export default {
         const param = query;
         return fetch(`${base}/${param}`)
         .then(e => e.json())
-        .then(o => console.log(o))
+        .catch(error => console.error(error))
     },
 };
