@@ -30,7 +30,7 @@ function countryInput(e) {
     .catch(err => console.error(err))
         //error({text: "You must enter query parameters!"});
         
-    
+}
 
 
 function buildList(count, template) {
